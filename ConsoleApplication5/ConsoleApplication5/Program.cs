@@ -5,56 +5,42 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ConsoleApplication5
-{
+{   //    5/6, 6/7
+    class Complex
+    {
+        public int a, b;
+
+        public Complex Add(Complex c)
+        {
+            Complex d = new Complex();
+            d.a = c.a + this.a;
+            d.b = c.b + this.b;
+            return d;
+        } 
+
+        public void print()
+        {
+            Console.WriteLine(this.a + "/" + this.b);
+        }
+    }
+
     class Program
     {
         static void Main(string[] args)
         {
-            int[] a = new int[5];
-            int[,] b = new int[3, 4];
+            Complex c = new Complex();
+            c.a = 5;
+            c.b = 6;
+            c.print();
 
-            int[,,] c = new int[2, 3, 4];
-
-            int[] a1 = { 1, 2, 3, 4, 5 };
-
-            foreach(int x in a1)
-            {
-                Console.WriteLine(x);
-            }
-
-            for (int i = 0; i < 4; i++)
-            {
-                int x = a1[i];
-                Console.WriteLine(x);
-            }
-
-            // 1 2 3 
-            // 4 5 6
-            //int[,] b1 = { { 1, 2, 3 }, { 4, 5, 6 } };
-
-            //int[][] ab = new int[4][];
-
-            //for (int i = 0; i < 4; i++)
-            //{
-            //    ab[i] = new int[i + 1];
-            //    for (int j = 0; j < i + 1; j++)
-            //    {
-            //        ab[i][j] = i + j;
-            //    }
-            //}
-
-            //for (int i = 0; i < 4; i++)
-            //{
-            //    for (int j = 0; j < i + 1; j++)
-            //    {
-            //        Console.Write(ab[i][j] + " ");
-            //    }
-            //    Console.WriteLine();
-            //}
+            Complex d = new Complex();
+            d.a = 6;
+            d.b = 7;
+            d.print();
 
 
-
-
+            Complex w = c.Add(d); // Complex Add(Complex c)
+            w.print();
             Console.ReadKey();
         }
     }
