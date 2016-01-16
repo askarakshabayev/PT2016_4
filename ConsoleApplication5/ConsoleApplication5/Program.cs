@@ -10,12 +10,18 @@ namespace ConsoleApplication5
     {
         static void Main(string[] args)
         {
-            int a = 5;
-            int b = 6;
-            Console.WriteLine(a + b);
-            a = 5;
-            b = 6;
-            Console.WriteLine(a + b);
+            // 4 5
+            // string.Split()
+
+            string s = "hello world 1 2 3";
+            string[] token = s.Split();
+            // token[0] = hello
+            // token[1] = world
+
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine(token[i]);
+            }
             Console.ReadKey();
         }
     }
