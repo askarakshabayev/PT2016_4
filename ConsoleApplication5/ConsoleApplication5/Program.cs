@@ -10,8 +10,9 @@ namespace ConsoleApplication5
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("hello world");
-            Console.Write("qwerty");
+            int a = 5;
+            int b = 6;
+            Console.WriteLine(a + b);
             Console.ReadKey();
         }
     }
