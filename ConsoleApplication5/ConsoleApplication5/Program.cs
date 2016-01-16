@@ -11,7 +11,7 @@ namespace ConsoleApplication5
         static void Main(string[] args)
         {
             Console.WriteLine("hello world");
-            Console.Write("abc");
+            Console.Write("qwerty");
             Console.ReadKey();
         }
     }
