@@ -10,15 +10,47 @@ namespace ConsoleApplication5
     {
         static void Main(string[] args)
         {
-            // int, long, byte
-            // double, float
-            // char 'a'-> 97, 'A' -> 65, '0' - 48, ' ' - 32
-            // string
-            //string s = "hello worldllo";
-            //int l = s.Length; // length of the string
-            //string s1 = s.Substring(2, 3); // 2 - start index, 3 - length of substring
-            //string s2 = s.Replace("llo", "qwerty"); // heqwerty world
-            //int position = s.IndexOf("llo", 3); // position = 2
+            int[] a = new int[5];
+            int[,] b = new int[3, 4];
+
+            int[,,] c = new int[2, 3, 4];
+
+            int[] a1 = { 1, 2, 3, 4, 5 };
+
+            foreach(int x in a1)
+            {
+                Console.WriteLine(x);
+            }
+
+            for (int i = 0; i < 4; i++)
+            {
+                int x = a1[i];
+                Console.WriteLine(x);
+            }
+
+            // 1 2 3 
+            // 4 5 6
+            //int[,] b1 = { { 1, 2, 3 }, { 4, 5, 6 } };
+
+            //int[][] ab = new int[4][];
+
+            //for (int i = 0; i < 4; i++)
+            //{
+            //    ab[i] = new int[i + 1];
+            //    for (int j = 0; j < i + 1; j++)
+            //    {
+            //        ab[i][j] = i + j;
+            //    }
+            //}
+
+            //for (int i = 0; i < 4; i++)
+            //{
+            //    for (int j = 0; j < i + 1; j++)
+            //    {
+            //        Console.Write(ab[i][j] + " ");
+            //    }
+            //    Console.WriteLine();
+            //}
 
 
 
